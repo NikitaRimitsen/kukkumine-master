@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Kukkumine</title>
+    <script src="kukkumine1.js">
+
+    </script>
+</head>
+<body onload="algus()"> <!--aktiveerima function algus-->
+
+<!--taust/фон-->
+<canvas id="tahvel" width="400" height="500"
+        style="background-color:yellow" onmousedown="hiirAlla(event)"></canvas><br>
+<canvas id="meri" width="400" height="200"
+        style="background-color:cornflowerblue" style="background-position: 20px, 30px" onmousedown="hiirAlla(event)"></canvas>
+
+<br><br>
+
+<!--Box-->
+<label for="razmer">Suurus:</label>
+<br>
+<input type="number" name="razmer" id="razmer">
+<input type="button"id="suurus"  onclick="Razmermaca(event)"  value="OK">
+<br><br>
+<label for="skorost">Kiirus:</label>
+<br>
+<input type="number" name="skorost" id="skorost">
+<input type="button"id="kiirus" onclick="Skorostmaca(event)"  value="OK">
+<br><br>
+<label for="uskorenie">Kiirendama:</label>
+<br>
+<input type="number" name="uskorenie" id="uskorenie">
+<input type="button" id="kiirendama"  onclick="Uskoreniemaca(event)"  value="OK">
+</form>
+</body>
+</html>
